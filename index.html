@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen"></div>
+        
+        <div class="buttonContainer">
+            <div class="Buttons">
+                <input type="text" placeholder="0.0" id="input" class="screenInput">
+                <button class="button" Id="num7" onclick=" desplay(`7`)">7</button>
+                <button class="button" Id="num8" onclick=" desplay(`8`)">8</button>
+                <button class="button" Id="num9" onclick=" desplay(`9`)">9</button>
+                <button class="button" Id="Del" onclick="del()">Del</button>
+
+                <button class="button" Id="num4" onclick=" desplay(`4`)">4</button>
+                <button class="button" Id="num5" onclick=" desplay(`5`)">5</button>
+                <button class="button" Id="num6" onclick=" desplay(`6`)">6</button>
+                <button class="button" Id="sum" onclick=" desplay(`+`)">+</button>
+
+                <button class="button" Id="num1" onclick=" desplay(`1`)">1</button>
+                <button class="button" Id="num2" onclick=" desplay(`2`)">2</button>
+                <button class="button" Id="num3" onclick=" desplay(`3`)">3</button>
+                <button class="button" Id="sub" onclick=" desplay(`-`)">-</button>
+
+                <button class="button" Id="dot" onclick=" desplay(`.`)">.</button>
+                <button class="button" Id="num0" onclick=" desplay(`0`)">0</button>
+                <button class="button" Id="devide" onclick=" desplay(`/`)">/</button>
+                <button class="button" Id="mult" onclick=" desplay(`*`)">x</button>
+
+                <button class="reset" Id="reset" onclick="reset()">Reset</button>
+                <button class="equal" Id="equal" onclick=" total('=')">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
